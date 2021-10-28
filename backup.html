@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letflix | Plans Page</title>
+    <link rel="stylesheet" href="subs.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="home-logo">
+            <a href="index.html"><img src="assets/logo_letflix-removebg-preview.png" alt="logo" height="50px"></a>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Menus</button>
+                <div class="dropdown-content">
+                    <a href="dramas.html">Dramas</a>
+                    <a href="plans.html">Plans</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <a class="subbtn" href="subscribe.html">Subscribe</a>
+        </div>
+    </header>
+<main class="subscribe">
+    <div class="sub_container">
+        <div class="header">
+            <h2 class="sub_text">Subscribe to LetFlix</h2>
+        </div>
+        <form action="" class="form" id="form">
+            <!--Username-->
+            <div class="form_control">
+                <label for="">Username</label>
+                <input type="text" placeholder="username" id="uname">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <!--Password-->
+            <div class="form_control">
+                <label for="">Password</label>
+                <input type="password" placeholder="password" id="password">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <!--Gender-->
+            <div class="form_control_rad" id="radd">
+                <label for="">Gender</label><br>
+                <label class="radbtn">
+                    <input type="radio" id="radio" name="gender">
+                    <label for="s1">Male</label>
+                </label><br>
+                <label class="radbtn">
+                    <input type="radio" id="radio" name="gender">
+                    <label for="s2">Female</label>
+                </label>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <!--Chosen Plan-->
+            <div class="form_control">
+                <label for="">Subscription Plan</label>
+                <select id="chosen_plan" name="chosen_plan" placeholder="Choose your plan">
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Diamond">Diamond</option>
+                </select>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <!--Customer Agreement-->
+            <div class="form_control">
+                    <input type="checkbox" placeholder="username" id="checkbox">
+                    <label for="">
+                        I Agree to the Terms and Condition
+                    </label>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
+        </form>
+        <script src="js/main.js"></script>
+    </div>
+</main>
+<div class="footer">
+    &copy;LetFlix Stream Corp. 2021
+</div>
+</body>
+</html>

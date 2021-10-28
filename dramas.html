@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="assets/logo_letflix-removebg-preview.png">
+    <title>Letflix | Dramas Page</title>
+</head>
+<body>
+    <header>
+      <div class="home-logo">
+          <a href="index.html"><img src="assets/logo_letflix-removebg-preview.png" alt="logo" height="50px"></a>
+      </div>
+      <div class="navbar">
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+              <button class="dropbtn">Menus<i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                  <a href="dramas.html">Dramas</a>
+                  <a href="plans.html">Plans</a>
+                  <a href="about.html">About</a>
+              </div>
+          </div>
+          <a class="subbtn" href="subscribe.html">Subscribe</a>
+      </div>
+    </header>
+    <main>
+        <div class="dramas_container">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandDrama" style="width: 65%">
+        </div>
+
+        <h4 class="dramas_country">Korean Dramas</h4>
+        <div class="dramas_row">
+            <div class="dramas_column">
+              <img src="assets/drama1.jpg" alt="korea 1" onclick="dramasFunction(this);">
+            </div>
+            <div class="dramas_column">
+              <img src="assets/drama2.jpg" alt="korea 2" onclick="dramasFunction(this);">
+            </div>
+            <div class="dramas_column">
+              <img src="assets/drama3.jpg" alt="korea 3" onclick="dramasFunction(this);">
+            </div>
+            <div class="dramas_column">
+              <img src="assets/drama4.jpg" alt="korea 4" onclick="dramasFunction(this);">
+            </div>
+          </div>
+
+        <h4 class="dramas_country">Japanese Dramas</h4>
+        <div class="dramas_row">
+            <div class="dramas_column">
+              <img src="assets/japan_drama1.jpg" alt="japan 1" onclick="dramasFunction(this);">
+            </div>
+            <div class="dramas_column">
+              <img src="assets/japan_drama2.jpg" alt="japan 2" onclick="dramasFunction(this);">
+            </div>
+            <div class="dramas_column">
+              <img src="assets/japan_drama3.jpg" alt="japan 3" onclick="dramasFunction(this);">
+            </div>
+            <div class="dramas_column">
+              <img src="assets/japan_drama4.jpg" alt="japan 4" onclick="dramasFunction(this);">
+            </div>
+          </div>
+
+        <script src="js/main.js"></script>
+
+        <div class="footer">
+            &copy;LetFlix Stream Corp. 2021
+        </div>
+    </main>
+</body>
+</html>

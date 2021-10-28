@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\PraQuiz"
+		},
+		{
+			"path": "..\\..\\projectHCI"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HCI"
+	}
+}

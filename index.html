@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="assets/logo_letflix-removebg-preview.png">
+    <title>Letflix | Home Page</title>
+    <script src="jquery/jquery.js"></script>
+</head>
+<body>
+    <header>
+        <div class="home-logo">
+            <a href="index.html"><img src="assets/logo_letflix-removebg-preview.png" alt="logo" height="50px"></a>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Menus<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="dramas.html">Dramas</a>
+                    <a href="plans.html">Plans</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <a class="subbtn" href="subscribe.html">Subscribe</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Header Slideshow -->
+        <div class="slideshow_container">
+            <div class="slides fade">
+                <img src="assets/slider1.jpg" alt="Alien" style="width:100%">
+                <div class="slider_caption">IN SPACE, NO ONE CAN HEAR YOUR SCREAM</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="assets/slider2.jpg" alt="Avenger" style="width:100%">
+                <div class="slider_caption">AVENGE THE FALLEN</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="assets/slider3.jpg" alt="Hello World" style="width:100%">
+                <div class="slider_caption">WHAT IF YOU WERE GIVEN THE CHANCE TO CHANGE ONE IMPORTANT DAY FOR THE BETTER?</div>
+            </div>
+
+            <!-- Next and Previous Button -->
+            <a class="prev_btn" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next_btn" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- JQuery Slider -->
+        <h4 class="top_dramas">YOU MIGHT ALSO WANT TO WATCH</h4>
+        
+        <div class="container">
+            <div id="slider">
+                <ul class="slides1">
+                    <li class="slide slide1">1</li>
+                    <li class="slide slide2">2</li>
+                    <li class="slide slide3">3</li>
+                    <li class="slide slide4">4</li>
+                    <li class="slide slide5">5</li>
+                    <li class="slide slide6">6</li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- Subscriber Benefits -->
+        <h4 class="ben_header">SUBSCRIBER BENEFITS</h4>
+        <div class="benefits">
+            <div class="column">
+                <h5>NO ADS</h5>
+                <p>Enjoy streaming your favorite movies and dramas without the interruption of advertisements</p>
+            </div>
+            <div class="column">
+                <h5>UNLIMITED ACCESS</h5>
+                <p>Access to all VIP movies and dramas</p>
+            </div>
+            <div class="column">
+                <h5>HIGH QUALITY</h5>
+                <p>Enjoy highest streaming video quality, up to 4K</p>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+        <br>
+
+        <div class="footer">
+            &copy;LetFlix Stream Corp. 2021
+        </div>
+    </main>
+</body>
+</html>

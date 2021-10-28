@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+/* HOME PAGE ======================================================================================= */
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.home-logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navbar {
+    overflow: hidden;
+
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 10px 17px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.subbtn {
+    background-color:darkred;
+    border-radius: 50px;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {  
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 10px 10px;
+    color: white;
+    background-color: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #b22222;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: darkred;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.slideshow_container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+}
+
+.prev_btn, .next_btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next_btn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slider_caption {
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: end;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+
+.top_dramas {
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+    color: red;
+    margin-top: 20px;
+}
+
+/* Jquery slides - BOLEH DI HAPUS*/
+.container{
+    position: relative;
+    margin-left: 8%;
+    background-size: cover;
+}
+
+#slider {
+    background-size: cover;
+    width: 1260px;
+    height: 600px;
+    overflow: hidden;
+}
+
+#slider .slides1 {
+    display: block;
+    width: 7200px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 1260px;
+    height: 600px;
+}
+
+
+
+/*imgs for Jquery slider*/
+.slide1 {
+    position: relative;
+    background-image: url(assets/drama1.jpg);
+    background-size: cover;}
+.slide2 {
+    position: relative;
+    background-image: url(assets/drama2.jpg);
+    background-size: cover;}
+.slide3 {
+    position: relative;
+    background-image: url(assets/drama3.jpg);
+    background-size: cover;}
+.slide4 {
+    position: relative;
+    background-image: url(assets/drama4.jpg);
+    background-size: cover;}
+.slide5 {
+    position: relative;
+    background-image: url(assets/drama5.jpg);
+    background-size: cover;}
+.slide6 {
+    position: relative;
+    background-image: url(assets/drama6.jpg);
+    background-size: cover;}
+
+.ben_header {
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+    color: red;
+    margin-top: 20px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+.column p {
+    padding: 5px;
+}
+
+.benefits:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* To make column flexible */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+/* DRAMAS PAGE ======================================================================================= */
+
+.dramas_country {
+    text-align: start;
+    padding: 30px 10px 20px 10px;
+    color: red;
+    margin-top: 20px;
+}
+
+.dramas_column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.dramas_column img {
+    opacity: 0.9;
+    height: 200px;
+    cursor: pointer;
+}
+
+.dramas_column img:hover {
+    opacity: 1;
+}
+
+.dramas_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.dramas_container {
+    position: relative;
+    display: none;
+    text-align: center;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* About Page ================================================================================== */
+.about_header img {
+    width: 100%;
+}
+
+.about_header {
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.about_header_quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+.about_title {
+    text-align: center;
+    color: red;
+    padding: 20px 20px 20px 20px;
+}
+
+.about_text {
+    color: white;
+    text-align: center;
+    padding: 10px 120px 10px 120px;
+}
+
+.about_hist {
+    display: flex;
+    padding: 10px 10px 10px 10px;
+}
+
+.hist_col {
+    flex: 50%;
+    color: white;
+    text-align: center;
+}
+
+.hist_col h4 {
+    color: red;
+    font-weight: bold;
+}
+
+.hist_col img {
+    height: 200px;
+    padding: 5px 0 5px 0;
+}
+
+/* Plans Page ================================================================================== */
+
+.sub_plans{
+    text-align: center;
+    color: red;
+    padding: 20px 20px 80px 20px;
+}
+
+.plan_container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: darkred;
+    padding: 100px 30px 100px 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 15px 50px;
+}
+
+.plan_text{
+    color: rgb(37, 37, 37);
+    text-align: center;
+    background: none;
+}
+.subcon1 {
+    display: inline-block;
+    position: relative;
+    border-radius: 15px 50px;
+    background: linear-gradient(to right, #8693ab, #bdd4e7
+    );
+    padding: 20px;
+    width: 20%;
+    height: 150px;
+}
+
+.subcon2 {
+    display: inline-block;
+    position: relative;
+    border-radius: 15px 50px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);;
+    padding: 20px;
+    width: 20%;
+    height: 150px;
+}
+
+.subcon3 {
+    display: inline-block;
+    position: relative;
+    border-radius: 15px 50px;
+    background: linear-gradient(to right, #b9f2ff, #52DFFF);
+    padding: 20px;
+    width: 20%;
+    height: 150px;
+}
+
+.sub_now{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+.sub_now a{
+    padding: 10px 24px;
+    text-decoration: none;
+    background-color:darkred;
+    color: white;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.sub_now a:hover{
+    background: #b22222;
+}
+
+
